@@ -1,0 +1,47 @@
+*{
+    color:black;
+    margin:1%;
+    font-size: 1.25rem;
+
+    text-align:justify-center;
+    font-family:'Courier New', Courier, monospace;
+    
+    border:none;
+    background-color:white;
+}
+
+h1{
+    font-size:2rem;
+}
+
+a:hover,button:hover{
+    font-weight:bold;
+}
+
+button{
+    font-size:1rem;
+    border:solid 1px black;
+}
+
+progress{
+    border:solid 1px black;
+    width:100%;
+}
+progress::-webkit-progress-bar{
+    background-color:white;
+}
+progress::-webkit-progress-value{
+    background-color:black;
+}
+
+a{
+    text-decoration:none;
+}
+
+footer, footer *{
+    font-size:1rem;
+}
+
+hr{
+    border:solid 0.5px black;
+}

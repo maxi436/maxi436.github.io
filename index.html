@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>maxi436's website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <button class="navbutton selected" onclick="show('main')">Start</button>
+            <button class="navbutton" onclick="show('about')">About Me</button>
+            <button class="navbutton" onclick="show('source')">Source Code</button>
+            <button class="navbutton" onclick="show('license')">License</button>
+        </nav>
+        <hr>
+
+        <section class="main">
+            <h1>Website In Progress</h1>
+            <progress value="75" max="100"></progress>
+        </section>
+
+        <section class="about">
+            <h1>About Me</h1>
+            I'm a student, who likes to code for fun.
+            I can code using Python, Java or HTML and JavaScript and am trying to build stylish websites.
+        </section>
+
+        <section class="source">
+            <h1>Source Code</h1>
+            <a href="https://github.com/maxi436/maxi436.github.io" target="_blank">GitHub Repository</a>
+        </section>
+        
+        <section class="license">
+            <h1>License</h1>
+            Copyright (C) 2026 maxi436
+            <br>
+            Prmission is granted to use, copy and modify this software
+            for personal and educational purposes.
+            <br>
+            Selling this software, modified versions of it, or including it
+            in comercial products is prohibited without prior permission
+            from the copyriht holder.
+            <br>
+            THE SOFTWARE IS PROVIDED "AS IS", WIHTOUT WARRANTY OF ANY KIND.
+        </section>
+
+        <footer>
+            <hr style="border:solid 0.5px black;">
+            &copy; 2026 <a href="https://github.com/maxi436" target="new">maxi436</a>
+        </footer>
+    <script>
+        function show(section){
+            document.querySelectorAll('section').forEach(s => s.style.display = 'none');
+            document.querySelectorAll('.navbutton').forEach(b => b.classList.remove('selected'));
+            document.querySelector(`.${section}`).style.display = 'block';
+            event.target.classList.add('selected');
+        }
+        show('main');
+    </script>
+    </body>
+</html>
