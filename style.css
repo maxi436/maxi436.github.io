@@ -4,10 +4,15 @@
     font-size: 1.25rem;
 
     text-align:justify-center;
-    font-family:'Courier New', Courier, monospace;
+    /*font-family:'Courier New', Courier, monospace;*/
+    font-family:'Segoe UI';
     
     border:none;
     background-color:white;
+}
+
+nav,footer,h1{
+    text-align:center;
 }
 
 h1{
@@ -15,12 +20,16 @@ h1{
 }
 
 a:hover,button:hover{
-    font-weight:bold;
+    text-decoration:underline;
+    text-decoration-thickness:1px;
 }
 
 button{
     font-size:1rem;
-    border:solid 1px black;
+}
+
+.selected{
+    font-weight:bold;
 }
 
 progress{
