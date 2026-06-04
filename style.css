@@ -98,3 +98,8 @@ code{
 input{
     width:2rem;
 }
+
+label{
+    font-size:0.75em;
+    color:purple;
+}

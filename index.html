@@ -6,19 +6,24 @@
         <title>maxi436's website</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <style id="style"></style>
     <body>
+        <label hidden>nav</label>
         <nav>
-            <button class="navbutton selected" onclick="show('start')">Start</button>
-            <button class="navbutton" onclick="show('about')">About Me</button>
-            <button hidden class="navbutton" onclick="show('source')">Source Code</button>
-            <button class="navbutton" onclick="show('links')">Links</button>
-            <button class="navbutton" onclick="show('license')">License</button>
+            <button class="navbutton selected" onclick="show('start', this)">Start</button>
+            <button class="navbutton" onclick="show('about', this)">About Me</button>
+            <button class="navbutton" onclick="show('links', this)">Other</button>
+            <button class="navbutton" onclick="show('license', this)">License</button>
         </nav>
         <hr>
 
+        <label hidden>sections</label>
         <section class="start">
             <h1>Website In Progress</h1>
-            <progress value="98" max="100"></progress>
+            <progress value="99" max="100"></progress>
+            This website is nearly finished.
+            <br>
+            You can click on the buttons above to navigate.
         </section>
 
         <section class="about">
@@ -37,10 +42,11 @@
         </section>
 
         <section class="links">
-            <h1>Links</h1>
+            <h1>Other</h1>
             <ul>
                 <li><a href="https://github.com/maxi436/maxi436.github.io" target="_blank">GitHub Repository</a></li>
-                <li><a href="/test.html">My Test Area</a></li>
+                <li><a href="/test.html">Test Area</a></li>
+                <li><button onclick="showstructure()">Debug Mode</button></li>
             </ul>
         </section>
 
@@ -59,9 +65,28 @@
         </section>
 
         <hr>
+        <label hidden>footer</label>
         <footer>
             (C) 2026 <a href="https://github.com/maxi436" target="new">maxi436</a>
         </footer>
         <script src="script.js"></script>
+        <script>
+            let debug=false;
+            function showstructure(){
+                if (debug===true){
+                    document.getElementById("style").innerText="";
+                    for (element of document.getElementsByTagName("label")){
+                        element.hidden=true;
+                    }
+                    debug=false;
+                }else{
+                    document.getElementById("style").innerText="*{border:solid 0.5px purple;}a,button{font-weight:bold;}";
+                    for (element of document.getElementsByTagName("label")){
+                        element.hidden=false;
+                    }
+                    debug=true;
+                }
+            }
+        </script>
     </body>
 </html>
