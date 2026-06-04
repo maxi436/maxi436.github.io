@@ -94,3 +94,7 @@ code{
     border:solid 1px black;
     display:block;
 }
+
+input{
+    width:2rem;
+}

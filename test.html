@@ -21,12 +21,14 @@
         
         <section class="start">
             <h1>Test Area</h1>
-            This is my testing area for frontend development.
+            This is my test area for frontend development.
             <br>
         </section>
 
         <section class="table">
             <h1>Table</h1>
+            y=x*<input value=0 id="m" type="number">
+            <button onclick="calculation()">Next</button>
             <table class="p25">
                 <tr>
                     <th>x</th>
@@ -37,72 +39,99 @@
                 </tr>
                 <tr class="none">
                     <th>y</th>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>6</td>
+                    <td id="0">0</td>
+                    <td id="1">0</td>
+                    <td id="2">0</td>
+                    <td id="3">0</td>
                 </tr>
             </table>
+            
+            <ul>
+                <li>
+                    <details>
+                        <summary>HTML</summary>
+                        <code>
+                            y=x*&lt;input value=0 id=&quot;m&quot; type=&quot;number&quot;&gt;
+                            &lt;button onclick=&quot;calculation()&quot;&gt;Next&lt;/button&gt;
+                            &lt;table class=&quot;p25&quot;&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;x&lt;/th&gt;
+                                    &lt;td&gt;0&lt;/td&gt;
+                                    &lt;td&gt;1&lt;/td&gt;
+                                    &lt;td&gt;2&lt;/td&gt;
+                                    &lt;td&gt;3&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr class=&quot;none&quot;&gt;
+                                    &lt;th&gt;y&lt;/th&gt;
+                                    &lt;td id=&quot;0&quot;&gt;0&lt;/td&gt;
+                                    &lt;td id=&quot;1&quot;&gt;0&lt;/td&gt;
+                                    &lt;td id=&quot;2&quot;&gt;0&lt;/td&gt;
+                                    &lt;td id=&quot;3&quot;&gt;0&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                        </code>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>CSS</summary>
+                        <code>
+                            /*widths*/
+                            .p25 th, .p25 td{
+                                width:25%;
+                            }
 
-            <details>
-                <summary>HTML</summary>
-                <code>
-                    &lt;table class=&quot;p25&quot;&gt;
-                        &lt;tr&gt;
-                            &lt;th&gt;x&lt;/th&gt;
-                            &lt;td&gt;0&lt;/td&gt;
-                            &lt;td&gt;1&lt;/td&gt;
-                            &lt;td&gt;2&lt;/td&gt;
-                            &lt;td&gt;3&lt;/td&gt;
-                        &lt;/tr&gt;
-                        &lt;tr class=&quot;none&quot;&gt;
-                            &lt;th&gt;y&lt;/th&gt;
-                            &lt;td&gt;0&lt;/td&gt;
-                            &lt;td&gt;2&lt;/td&gt;
-                            &lt;td&gt;4&lt;/td&gt;
-                            &lt;td&gt;6&lt;/td&gt;
-                        &lt;/tr&gt;
-                    &lt;/table&gt;
-                </code>
-            </details>
-            <details>
-                <summary>CSS</summary>
-                <code>
-                    /*widths*/
-                    .p25 th, .p25 td{
-                        width:25%;
-                    }
-
-                    <br>
-                    /*flex and aligning*/
-                    table{
-                        display:flex;
-                        flex-direction:column;
-                        width:98%;
-                    }
-                    table, table *, th{
-                        padding:0;
-                        margin:0;
-                        text-align:center;
-                    }
-                    th,tr{
-                        display:flex;
-                        flex-direction:row;
-                        justify-content:space-between;
-                    }
-                    
-                    <br>
-                    /*borders*/
-                    tr{
-                        border-bottom:solid 1px black;
-                    }
-                    td{
-                        border-left:solid 1px black;
-                    }
-                    .none{
-                        border:none;
-                    }
-                </code>
+                            <br>
+                            /*flex and aligning*/
+                            table{
+                                display:flex;
+                                flex-direction:column;
+                                width:98%;
+                            }
+                            table, table *, th{
+                                padding:0;
+                                margin:0;
+                                text-align:center;
+                            }
+                            th,tr{
+                                display:flex;
+                                flex-direction:row;
+                                justify-content:space-between;
+                            }
+                            
+                            <br>
+                            /*borders*/
+                            tr{
+                                border-bottom:solid 1px black;
+                            }
+                            td{
+                                border-left:solid 1px black;
+                            }
+                            .none{
+                                border:none;
+                            }
+                        </code>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>JavaScript</summary>
+                        <code>
+                            function calculation(){
+                                document.getElementById(&quot;m&quot;).value=parseInt(document.getElementById(&quot;m&quot;).value)+1;
+                                if (document.getElementById(&quot;m&quot;).value&gt;10){
+                                    document.getElementById(&quot;m&quot;).value=0;
+                                }
+                                const m=document.getElementById(&quot;m&quot;).value;
+                                for (let i=0;i&lt;4;i++){
+                                    document.getElementById(i).innerText=&quot;&quot;;
+                                    document.getElementById(i).innerText=i*m;
+                                }
+                            }
+                        </code>
+                    </details>
+                </li>
+            </ul>
         </section>
 
         <hr>
@@ -110,5 +139,18 @@
             (C) 2026 <a href="https://github.com/maxi436" target="_blank">maxi436</a>
         </footer>
         <script src="script.js"></script>
+        <script>
+            function calculation(){
+                document.getElementById("m").value=parseInt(document.getElementById("m").value)+1;
+                if (document.getElementById("m").value>10){
+                    document.getElementById("m").value=0;
+                }
+                const m=document.getElementById("m").value;
+                for (let i=0;i<4;i++){
+                    document.getElementById(i).innerText="";
+                    document.getElementById(i).innerText=i*m;
+                }
+            }
+        </script>
     </body>
 </html>
