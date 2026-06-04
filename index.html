@@ -8,14 +8,15 @@
     </head>
     <body>
         <nav>
-            <button class="navbutton selected" onclick="show('main')">Start</button>
+            <button class="navbutton selected" onclick="show('start')">Start</button>
             <button class="navbutton" onclick="show('about')">About Me</button>
-            <button class="navbutton" onclick="show('source')">Source Code</button>
+            <button hidden class="navbutton" onclick="show('source')">Source Code</button>
+            <button class="navbutton" onclick="show('links')">Links</button>
             <button class="navbutton" onclick="show('license')">License</button>
         </nav>
         <hr>
 
-        <section class="main">
+        <section class="start">
             <h1>Website In Progress</h1>
             <progress value="95" max="100"></progress>
         </section>
@@ -29,12 +30,20 @@
         <section class="source">
             <h1>Source Code</h1>
             <ul>
-                <li><a href="https://github.com/maxi436/maxi436.github.io" target="_blank">GitHub Repository</a></li>
                 <li><a href="/style.css">style.css</a></li>
                 <li><a href="/index.html">index.html</a></li>
+                <li><a href="/script.js">script.js</a></li>
             </ul>
         </section>
-        
+
+        <section class="links">
+            <h1>Links</h1>
+            <ul>
+                <li><a href="https://github.com/maxi436/maxi436.github.io" target="_blank">GitHub Repository</a></li>
+                <li><a href="/test.html">My Test Area</a></li>
+            </ul>
+        </section>
+
         <section class="license">
             <h1>License</h1>
             Copyright (C) 2026 maxi436
@@ -46,21 +55,13 @@
             in comercial products is prohibited without prior permission
             from the copyriht holder.
             <br>
-            THE SOFTWARE IS PROVIDED "AS IS", WIHTOUT WARRANTY OF ANY KIND.
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
         </section>
 
         <hr>
         <footer>
             &copy; 2026 <a href="https://github.com/maxi436" target="new">maxi436</a>
         </footer>
-    <script>
-        function show(section){
-            document.querySelectorAll('section').forEach(s => s.style.display = 'none');
-            document.querySelectorAll('.navbutton').forEach(b => b.classList.remove('selected'));
-            document.querySelector(`.${section}`).style.display = 'block';
-            event.target.classList.add('selected');
-        }
-        show('main');
-    </script>
+        <script src="script.js"></script>
     </body>
 </html>

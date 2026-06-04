@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Area</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        .p25 th, .p25 td{
+            width:25%;
+        }
+    </style>
+    <body>
+        <nav>
+            <button class="navbutton selected" onclick="show('start')">Start</button>
+            <button class="navbutton" onclick="show('table')">Table</button>
+            <a href="/index.html"><button class="navbutton back">Back</button></a>
+        </nav>
+        <hr>
+        
+        <section class="start">
+            <h1>Test Area</h1>
+            This is my testing area for frontend development.
+            <br>
+        </section>
+
+        <section class="table">
+            <h1>Table</h1>
+            <table class="p25">
+                <tr>
+                    <th>x</th>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr class="none">
+                    <th>y</th>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+            </table>
+
+            <details>
+                <summary>HTML</summary>
+                <code>
+                    &lt;table class=&quot;p25&quot;&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;x&lt;/th&gt;
+                            &lt;td&gt;0&lt;/td&gt;
+                            &lt;td&gt;1&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;3&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr class=&quot;none&quot;&gt;
+                            &lt;th&gt;y&lt;/th&gt;
+                            &lt;td&gt;0&lt;/td&gt;
+                            &lt;td&gt;2&lt;/td&gt;
+                            &lt;td&gt;4&lt;/td&gt;
+                            &lt;td&gt;6&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                </code>
+            </details>
+            <details>
+                <summary>CSS</summary>
+                <code>
+                    /*widths*/
+                    .p25 th, .p25 td{
+                        width:25%;
+                    }
+
+                    <br>
+                    /*flex and aligning*/
+                    table{
+                        display:flex;
+                        flex-direction:column;
+                        width:98%;
+                    }
+                    table, table *, th{
+                        padding:0;
+                        margin:0;
+                        text-align:center;
+                    }
+                    th,tr{
+                        display:flex;
+                        flex-direction:row;
+                        justify-content:space-between;
+                    }
+                    
+                    <br>
+                    /*borders*/
+                    tr{
+                        border-bottom:solid 1px black;
+                    }
+                    td{
+                        border-left:solid 1px black;
+                    }
+                    .none{
+                        border:none;
+                    }
+                </code>
+        </section>
+
+        <hr>
+        <footer>
+            &copy; 2026 <a href="https://github.com/maxi436" target="_blank">maxi436</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 *{
     color:black;
     margin:1%;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     text-align:justify-center;
     font-family:'Courier New', Courier, monospace;
@@ -18,22 +18,26 @@ h1{
     font-size:2rem;
 }
 
-a:hover,button:hover{
+a:hover,button:hover,summary:hover{
     text-decoration:underline;
     text-decoration-thickness:1px;
 }
-
 button{
     font-size:1rem;
 }
-
 .selected{
     font-weight:bold;
+}
+.back{
+    position:fixed;
+    top:0;
+    left:0;
 }
 
 progress{
     border:solid 1px black;
-    width:100%;
+    width:98%;
+    align-self:center;
 }
 progress::-webkit-progress-bar{
     background-color:white;
@@ -49,7 +53,44 @@ a{
 footer, footer *{
     font-size:1rem;
 }
-
 hr{
     border:solid 0.5px black;
+}
+.start{
+    text-align:center;
+}
+
+summary{
+    list-style:none;
+}
+
+table{
+    display:flex;
+    flex-direction:column;
+    width:98%;
+}
+table, table *, th{
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+th,tr{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+tr{
+    border-bottom:solid 1px black;
+}
+td{
+    border-left:solid 1px black;
+}
+.none{
+    border:none;
+}
+
+code{
+    border:solid 1px black;
+    display:block;
 }
