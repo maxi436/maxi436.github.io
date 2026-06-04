@@ -6,19 +6,19 @@
         <title>Test Area</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <style>
-        .p25 th, .p25 td{
-            width:25%;
-        }
+    <style id="style">
     </style>
     <body>
+        <label hidden>nav</label>
         <nav>
-            <button class="navbutton selected" onclick="show('start')">Start</button>
-            <button class="navbutton" onclick="show('table')">Tables</button>
+            <button class="navbutton selected" onclick="show('start',this)">Start</button>
+            <button class="navbutton" onclick="show('table',this)">Tables</button>
+            <button class="navbutton" onclick="show('other',this)">Other</button>
             <a href="/index.html"><button class="navbutton back">Back</button></a>
         </nav>
         <hr>
         
+        <label hidden>sections</label>
         <section class="start">
             This is my
             <h1>Test Area</h1>
@@ -135,6 +135,28 @@
             </ul>
         </section>
 
+        <section class="other">
+            <h1>Other</h1>
+            <ul>
+                <li><button class="navbutton" onclick="showstructure()">Debug Mode</button></li>
+            </ul>
+        </section>
+
+        <section class="license">
+            <h1>License</h1>
+            Copyright (C) 2026 maxi436
+            <br>
+            Permission is granted to use, copy and modify this software
+            for personal and educational purposes.
+            <br>
+            Selling this software, modified versions of it, or including it
+            in comercial products is prohibited without prior permission
+            from the copyriht holder.
+            <br>
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+        </section>
+
+        <label hidden>footer</label>
         <hr>
         <footer>
             (C) 2026 <a href="https://github.com/maxi436" target="_blank">maxi436</a>
@@ -150,6 +172,24 @@
                 for (let i=0;i<4;i++){
                     document.getElementById(i).innerText="";
                     document.getElementById(i).innerText=i*m;
+                }
+            }
+        </script>
+        <script>
+            let debug=false;
+            function showstructure(){
+                if (debug===true){
+                    document.getElementById("style").innerText="";
+                    for (element of document.getElementsByTagName("label")){
+                        element.hidden=true;
+                    }
+                    debug=false;
+                }else{
+                    document.getElementById("style").innerText="*{border:solid 0.5px purple;}a{text-decoration:underline;}button{border:solid 2px black;}";
+                    for (element of document.getElementsByTagName("label")){
+                        element.hidden=false;
+                    }
+                    debug=true;
                 }
             }
         </script>

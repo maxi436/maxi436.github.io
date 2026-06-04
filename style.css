@@ -1,6 +1,7 @@
 *{
     color:black;
     margin:1%;
+    padding:0;
     font-size: 1.125rem;
 
     text-align:justify-center;
@@ -8,22 +9,34 @@
     
     border:none;
     background-color:white;
+    z-index:0;
 }
 
-nav,footer,h1{
+nav,footer,h1,.start{
     text-align:center;
 }
-
+footer, footer *{
+    font-size:1rem;
+}
+hr{
+    border:solid 0.5px black;
+}
 h1{
     font-size:2rem;
 }
 
+a{
+    text-decoration:none;
+}
 a:hover,button:hover,summary:hover{
     text-decoration:underline;
     text-decoration-thickness:1px;
 }
-button{
+nav button{
     font-size:1rem;
+}
+section button{
+    margin:0 1% 0 1%;
 }
 .selected{
     font-weight:bold;
@@ -32,6 +45,8 @@ button{
     position:fixed;
     top:0;
     left:0;
+    z-index:0;
+    background:transparent;
 }
 
 progress{
@@ -46,24 +61,9 @@ progress::-webkit-progress-value{
     background-color:black;
 }
 
-a{
-    text-decoration:none;
+.p25 th, .p25 td{
+    width:25%;
 }
-
-footer, footer *{
-    font-size:1rem;
-}
-hr{
-    border:solid 0.5px black;
-}
-.start{
-    text-align:center;
-}
-
-summary{
-    list-style:none;
-}
-
 table{
     display:flex;
     flex-direction:column;
@@ -97,6 +97,9 @@ code{
 
 input{
     width:2rem;
+}
+summary,ul{
+    list-style:none;
 }
 
 label{
