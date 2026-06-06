@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Test Area</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="modern.css">
+        <link rel="stylesheet" href="table.css">
     </head>
     <style id="style">
     </style>
@@ -13,7 +14,7 @@
         <nav>
             <button class="navbutton selected" onclick="show('start',this)">Start</button>
             <button class="navbutton" onclick="show('table',this)">Tables</button>
-            <button class="navbutton" onclick="show('other',this)">Other</button>
+            <button class="navbutton" onclick="show('license',this)">License</button>
             <a href="/index.html"><button class="navbutton back">Back</button></a>
         </nav>
         <hr>
@@ -28,7 +29,7 @@
 
         <section class="table">
             <h1>Tables</h1>
-            y=x*<input value=0 id="m" type="number">
+            y=x*<input value=0 id="m" type="number" style="width:20px;">
             <button onclick="calculation()">Next</button>
             <table class="p25">
                 <tr>
@@ -119,7 +120,7 @@
                         <summary>JavaScript</summary>
                         <code>
                             function calculation(){
-                                document.getElementById(&quot;m&quot;).value=parseInt(document.getElementById(&quot;m&quot;).value)+1;
+                                document.getElementById(&quot;m&quot;).value=parseInt (document.getElementById(&quot;m&quot;).value)+1;
                                 if (document.getElementById(&quot;m&quot;).value&gt;10){
                                     document.getElementById(&quot;m&quot;).value=0;
                                 }
