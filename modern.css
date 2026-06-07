@@ -102,7 +102,7 @@ summary{
     list-style:none;
     display:inline;
 }
-summary:hover,link:hover{
+summary:hover,a:hover{
     border-bottom:dotted 2px var(--accent);
 }
 details[open] summary{
