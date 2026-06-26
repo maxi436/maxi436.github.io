@@ -21,7 +21,7 @@ nav, nav * {
     text-align: center;
     font-size: calc(var(--size)/100*90);
 }
-button:hover{
+button:hover,section a{
     border-bottom:dotted 2px var(--accent); 
 }
 .selected{
@@ -48,6 +48,10 @@ hr {
 h1 {
     text-align: center;
     font-size:calc(var(--size)*2);
+}
+h2 {
+    text-align:center;
+    font-size:calc(var(--size)*1.5);
 }
 
 /*input*/
@@ -114,4 +118,15 @@ code{
     border:solid 2px var(--accent);
     line-break:auto;
     padding:1%;
+}
+.project{
+    display:block;
+    border:none !important;
+}
+.project h2{
+    display:inline;
+    text-align:center;
+}
+.project:hover h2{
+    border-bottom:dotted 2px var(--accent);
 }

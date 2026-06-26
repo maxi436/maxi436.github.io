@@ -6,13 +6,12 @@
         <title>maxi436's website</title>
         <link rel="stylesheet" href="modern.css">
     </head>
-    <style id="style"></style>
     <body>
         <label hidden>nav</label>
         <nav>
             <button class="navbutton selected" onclick="show('start', this)">Start</button>
             <button class="navbutton" onclick="show('about', this)">About Me</button>
-            <button class="navbutton" onclick="show('links', this)">Other</button>
+            <button class="navbutton" onclick="show('projects', this)">Projects</button>
             <button class="navbutton" onclick="show('license', this)">License</button>
         </nav>
         <hr>
@@ -37,21 +36,15 @@
             I am currently learning Englisch and CSS.
         </section>
 
-        <section class="source">
-            <h1>Source Code</h1>
-            <ul>
-                <li><a href="/style.css">style.css</a></li>
-                <li><a href="/index.html">index.html</a></li>
-                <li><a href="/script.js">script.js</a></li>
-            </ul>
-        </section>
-
-        <section class="links">
-            <h1>Other</h1>
-            <ul>
-                <li><a href="https://github.com/maxi436/maxi436.github.io" target="_blank">GitHub Repository</a></li>
-                <li><a href="/test.html">Test Area</a></li>
-            </ul>
+        <section class="projects">
+            <h1>Projects</h1>
+            <a class="project" href="https://maxi436.github.io/Noten">
+                <h2>Grade Comparision</h2>
+                <br>
+                On this page you can compare your grades with your goals and
+                calculate your stats.<br>
+                It uses HTML, JavaScript and CSS.<br>
+            </a>
         </section>
 
         <section class="license">
@@ -74,23 +67,5 @@
             (C) 2026 <a href="https://github.com/maxi436" target="new">maxi436</a>
         </footer>
         <script src="script.js"></script>
-        <script>
-            let debug=false;
-            function showstructure(){
-                if (debug===true){
-                    document.getElementById("style").innerText="";
-                    for (element of document.getElementsByTagName("label")){
-                        element.hidden=true;
-                    }
-                    debug=false;
-                }else{
-                    document.getElementById("style").innerText="*{border:solid 0.5px purple;}a{text-decoration:underline;}button{border:solid 2px black;}";
-                    for (element of document.getElementsByTagName("label")){
-                        element.hidden=false;
-                    }
-                    debug=true;
-                }
-            }
-        </script>
     </body>
 </html>
