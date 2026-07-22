@@ -12,24 +12,23 @@
 
 body {
     margin: 1%;
-    background-color:#10101A;
+    background-color:#0A0A0F;
 }
 nav, nav * {
     text-align: center;
     font-size:1em;
     color:#AAB;
-    background-color:#303035;
-    border:0px;
+    background-color:#202025;
+    border:solid 1px #25252A;
     border-radius:15px;
-    margin-bottom:2%;
 }
-button {
+nav button {
     border:none;
     background:none;
     position: relative;
     text-decoration: none;
 }
-button::after {
+nav button::after {
   content: '';
   position: absolute;
   left: 0;
@@ -41,29 +40,43 @@ button::after {
   transform-origin: center;
   transition: transform 0.3s ease-out;
 }
-button.selected::after {
+nav button.selected::after {
   transform: scaleX(1);
 }
 
 footer, footer * {
     text-align: center;
-    font-size:1em;
+    font-size:0.9em;
     margin-top: 2%;
     color:#AAB;
 }
 section {
     width: 96%;
     color:#BBC;
-    background-color:#303035;
-    border:0px;
+    background-color:#202025;
+    border:solid 1px #25252A;;
     border-radius:15px;
     margin-bottom:2%;
     padding:1%;
 }
+section a{
+    display:block;
+    text-align:center;
+}
+section a:hover{
+    border-bottom:none;
+}
 section button{
-    background-color:#8080BA;
-    border-radius:50px;
-    padding:0 1rem 0 1rem;
+    color:#AAB;
+    background-color:#50508A;
+    border:solid 1px #555595;
+    border-radius:15px;
+    font-size:0.9em;
+    padding:0% 1% 0% 1%;
+}
+section button:hover{
+    background-color:#6060A0;
+    border:solid 1px #6565A5;
 }
 .start{
     text-align:center;
@@ -76,56 +89,11 @@ hr {
 h1 {
     text-align: center;
     font-size:1.7em;
-    color:#CCD;
+    color:#DDE;
 }
 h2 {
     text-align:center;
-    font-size:1.5rem;
-}
-
-/*input*/
-input:hover{
-    border-bottom:dotted 2px var(--accent);
-}
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-input:focus {
-    outline: none;
-    border-bottom: solid 2px var(--accent);
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 1000px white inset !important;
-    box-shadow: 0 0 0 1000px white inset !important;
-}
-input:invalid {
-    box-shadow: none;
-}
-
-.fach {
-    width: 50%;
-}
-tr {
-    width: 100%;
-}
-
-progress{
-    border:solid 1px black;
-    width:96%;
-}
-progress::-webkit-progress-bar{
-    background-color:white;
-}
-progress::-webkit-progress-value{
-    background-color:black;
+    font-size:1.3rem;
 }
 
 ul{
@@ -147,15 +115,4 @@ code{
     border:solid 2px var(--accent);
     line-break:auto;
     padding:1%;
-}
-.project{
-    display:block;
-    border:none !important;
-}
-.project h2{
-    display:inline;
-    text-align:center;
-}
-.project:hover h2{
-    border-bottom:dotted 2px var(--accent);
 }

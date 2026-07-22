@@ -66,6 +66,9 @@ h2 {
 }
 
 /*input*/
+input{
+    border:none;
+}
 input:hover{
     border-bottom:dotted 2px var(--accent);
 }
