@@ -4,47 +4,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>maxi436's website</title>
-        <link rel="stylesheet" href="modern.css">
+        <link rel="stylesheet" href="dark.css">
     </head>
     <body>
         <label hidden>nav</label>
         <nav>
             <button class="navbutton selected" onclick="show('start', this)">Start</button>
-            <button class="navbutton" onclick="show('about', this)">About Me</button>
             <button class="navbutton" onclick="show('projects', this)">Projects</button>
             <button class="navbutton" onclick="show('license', this)">License</button>
         </nav>
-        <hr>
 
         <label hidden>sections</label>
         <section class="start">
-            <h1>Welcome To My Website</h1>
-            This website is a project from me.<br>
-            Click the buttons above to navigate.
-        </section>
-
-        <section class="progress">
-            <h1>Website In Progress</h1>
-            <progress value="99" max="100"></progress><br>
-            This website is nearly finished.<br>
-            You can click on the buttons above to navigate.
-        </section>
-
-        <section class="about">
-            <h1>About Me</h1>
-            I'm a student, who likes to code for fun.
-            I am currently learning Englisch and CSS.
+            <h1>Hello!</h1>
+            I am a stundent who is currently working on his skills in HTML and CSS.<br>
+            <button onclick="show('projects',document.getElementsByClassName('navbutton'))[3]">my projects</button>
         </section>
 
         <section class="projects">
             <h1>Projects</h1>
-            <a class="project" href="https://maxi436.github.io/Noten">
-                <h2>Grade Comparision</h2>
-                <br>
-                On this page you can compare your grades with your goals and
-                calculate your stats.<br>
-                It uses HTML, JavaScript and CSS.<br>
-            </a>
+            <h2>Grade Comparision</h2>
+            You can enter your grades and compare those to your goals and you can
+            calculate your statistics.
         </section>
 
         <section class="license">
@@ -61,7 +42,6 @@
             THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
         </section>
 
-        <hr>
         <label hidden>footer</label>
         <footer>
             (C) 2026 <a href="https://github.com/maxi436" target="new">maxi436</a>
