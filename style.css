@@ -1,6 +1,6 @@
-:root{
+:root {
     --accent:#AAF;
-    font-size:1.1em;
+    font-size:1.5em;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
 nav, nav * {
     text-align: center;
     font-size:1em;
-    color:#AAB;
+    color:#99A;
     background-color:#202025;
     border:solid 1px #25252A;
     border-radius:15px;
@@ -29,28 +29,30 @@ nav button {
     text-decoration: none;
 }
 nav button::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color:#50508A;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color:#50508A;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
 }
 nav button.selected::after {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 footer, footer * {
     text-align: center;
-    font-size:0.9em;
+    font-size:0.8em;
     margin-top: 2%;
-    color:#AAB;
+    color:#889;
 }
+
 section {
+    font-size:1em;
     width: 96%;
     color:#BBC;
     background-color:#202025;
@@ -59,14 +61,35 @@ section {
     margin-bottom:2%;
     padding:1%;
 }
-section a{
-    display:block;
+section a {
+    color:#99A;
+    border:none;
+    background:none;
+    position: relative;
+    text-decoration: none;
     text-align:center;
 }
-section a:hover{
+section a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color:#60609A;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+section a:hover {
+    display:inline;
     border-bottom:none;
 }
-section button{
+section a:hover::after {
+    transform: scaleX(1);
+}
+
+section button {
     color:#AAB;
     background-color:#505090;
     border:solid 1px #6060A0;
@@ -74,11 +97,12 @@ section button{
     font-size:0.9em;
     padding:0% 1% 0% 1%;
 }
-section button:hover{
+section button:hover {
     background-color:#6060A0;
     border:solid 1px #7070B0;
 }
-.start{
+
+.start {
     text-align:center;
 }
 hr {
@@ -88,28 +112,29 @@ hr {
 }
 h1 {
     text-align: center;
-    font-size:1.7em;
-    color:#DDE;
+    font-size:2em;
+    color:#EEF;
 }
 h2 {
+    color:#CCD;
     text-align:center;
-    font-size:1.3rem;
+    font-size:1.6rem;
 }
 
 ul{
     list-style:disc;
 }
-summary{
+summary {
     list-style:none;
     display:inline;
 }
-summary:hover,a:hover{
+summary:hover,a:hover {
     border-bottom:dotted 2px var(--accent);
 }
-details[open] summary{
+details[open] summary {
     border-bottom:solid 2px var(--accent);
 }
-code{
+code {
     font-family:consolas;
     display:block;
     border:solid 2px var(--accent);

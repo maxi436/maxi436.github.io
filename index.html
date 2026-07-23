@@ -7,14 +7,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <label hidden>nav</label>
         <nav>
             <button class="navbutton selected" onclick="show('start', this)">Start</button>
             <button class="navbutton" onclick="show('projects', this)">Projects</button>
-            <button class="navbutton" onclick="show('license', this)">License</button>
+            <button class="navbutton" onclick="show('links', this)">Links</button>
         </nav>
 
-        <label hidden>sections</label>
         <section class="start">
             <h1>Hello!</h1>
             I am a stundent who is currently working on his skills in HTML and CSS.<br>
@@ -24,9 +22,21 @@
             <h1>Projects</h1>
             <h2>Grade Comparision (DE)</h2>
             You can enter your grades and compare those to your goals and you can
-            calculate your statistics.
-            <br>
-            <a href="https://maxi436.github.io/Noten"><button>click here</button></a>
+            calculate your statistics.<br>
+            <a target="new" href="https://maxi436.github.io/Noten">Website</a>
+            <a target="new" href="https://github.com/maxi436/Noten">GitHub</a>
+            <h2>Games (EN)</h2>
+            I am currently learning pygame and these are the small games I created.<br>
+            <a target="new" href="https://github.com/maxi436/Games">GitHub</a>
+        </section>
+
+        <section class="links">
+            <h1>Links</h1>
+            <h2>GitHub</h2>
+            <a target="new" href="https://github.com/maxi436/maxi436.github.io">The Repository</a><br>
+            <a target="new" href="https://github.com/maxi436">My Profile</a>
+            <h2>Other</h2>
+            <a target="new" href="LICENSE">License</a>
         </section>
 
         <section class="license">
@@ -43,9 +53,8 @@
             THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
         </section>
 
-        <label hidden>footer</label>
         <footer>
-            (C) 2026 <a href="https://github.com/maxi436" target="new">maxi436</a>
+            &copy; 2026 maxi436
         </footer>
         <script src="script.js"></script>
     </body>
