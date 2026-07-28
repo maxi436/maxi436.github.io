@@ -9,38 +9,57 @@
     <body>
         <nav>
             <button class="navbutton selected" onclick="show('start', this)">Start</button>
+            <button class="navbutton" onclick="show('skills', this)">Skills</button>
             <button class="navbutton" onclick="show('projects', this)">Projects</button>
-            <button class="navbutton" onclick="show('links', this)">Links</button>
+            <a class="right" href="https://github.com/maxi436" target="new"><button>maxi436</button></a>
         </nav>
 
         <section class="start">
             <h1>Hello!</h1>
-            I am a stundent who is currently working on his skills in HTML and CSS.<br>
         </section>
 
         <section class="projects">
-            <h1>Projects</h1>
-            <h2>Grade Comparision (DE)</h2>
-            You can enter your grades and compare those to your goals and you can
-            calculate your statistics.<br>
-            <a target="new" href="https://maxi436.github.io/Noten">Website</a>
-            <a target="new" href="https://github.com/maxi436/Noten">GitHub</a>
-            <h2>Games (EN)</h2>
-            I am currently learning pygame and these are the small games I created.<br>
-            <a target="new" href="https://github.com/maxi436/Games">GitHub</a>
+            <div>
+            <h2>/Noten</h2>
+                <p>A program to compare your grades to your goals.</p>
+                <a target="new" href="https://maxi436.github.io/Noten">Website</a>
+                <a target="new" href="https://github.com/maxi436/Noten">GitHub</a>
+            </div>
+            <div>
+                <h2>/Games</h2>
+                <p>A small arcade games based on pygame.</p>
+                <a target="new" href="https://github.com/maxi436/Games">GitHub</a>
+            </div>
         </section>
 
-        <section class="links">
-            <h1>Links</h1>
-            <h2>GitHub</h2>
-            <a target="new" href="https://github.com/maxi436/maxi436.github.io">The Repository</a><br>
-            <a target="new" href="https://github.com/maxi436">My Profile</a>
-            <h2>Other</h2>
-            <a target="new" href="LICENSE">License</a>
+        <section class="skills">
+            <p>
+                <bold>Python3</bold>
+                2022
+            </p>
+            <p>
+                <bold>HTML4</bold>
+                2024
+            </p>
+            <p>
+                <bold>CSS3</bold>
+                2024
+            </p>
+            <p>
+                <bold>JavaScript</bold>
+                2025
+            </p>
+            <p>
+                <bold>SQL</bold>
+                2025
+            </p>
+            <p>
+                <bold>Java</bold>
+                2025
+            </p>
         </section>
 
         <section class="license">
-            <h1>License</h1>
             Copyright (C) 2026 maxi436
             <br>
             Permission is granted to use, copy and modify this software
@@ -54,7 +73,7 @@
         </section>
 
         <footer>
-            &copy; 2026 maxi436
+            <button class="navbutton" onclick="show('license',this)">&copy; 2026 maxi436
         </footer>
         <script src="script.js"></script>
     </body>
