@@ -6,6 +6,7 @@
 }
 
 body{
+    margin-top:2em;
     color:#F1F5F9;
     background:none;
 }
@@ -33,19 +34,23 @@ h2{
 }
 section{
     padding:0em 1em 0em 1em;
+    margin-top:2.5em;
 }
 
 nav{
+    background-color:#05090D;
+    position:fixed;
+    top:0em;
     color:#F1F5F9;
     border-radius:5px;
-    padding:0.2em 0.2em 0.2em 0.2em;
+    padding:0.3em 0.2em 0.2em 0.2em;
     font-size:1em;
-    line-height:0.8em;
-    margin-bottom:1em;
+    line-height:1em;
     text-align:center;
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
+    width:100%;
 }
 nav button{
     color:#F1F5F9;
@@ -57,8 +62,12 @@ nav button{
 }
 nav button.selected{
     background-color:#1E1E24;
-    border:solid 0px;
+    border:solid 2px #2E2E34;
     border-radius:5px;
+}
+nav svg{
+    width:1em;
+    height:1em;
 }
 
 section a{
@@ -75,39 +84,62 @@ a:hover{
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    margin-bottom:1em;
 }
 .skills p{
     background-color:#1E1E24;
-    border:solid 0px;
+    color:#94A3B8;
+    border:solid 2px #2E2E34;
     border-radius:10px;
     display:block;
-    width:7em;
+    width:8em;
     text-align:center;
-    margin:0.2em;
+    margin:0.4em;
     padding:0.1em;
+    padding-top:0.5em;
+    font-size:0.85em;
 }
 .projects div{
     background-color:#1E1E24;
-    border:solid 0px;
+    border:solid 2px #2E2E34;
     border-radius:10px;
     display:block;
     width:auto;
     min-width:14em;
     max-width:20em;
     text-align:center;
-    margin:0.2em;
+    margin:0.4em;
     padding:0.4em;
 }
-.skills p bold, .projects div h1{
-    font-size:1.1em;
-    line-height:1.1em;
-    font-weight:bold;
-    display:block;
+.projects div:hover, .skills p:hover{
+    position:relative;
+    bottom:0.2em;
 }
+.skills p bold, .projects div h1{
+    font-size:1.2em;
+    line-height:1.2em;
+    display:block;
+    color:#F1F5F9;
+}
+.skills p svg{
+    width:5em;
+    height:5em;
+}
+.projects div svg{
+    width:2em;
+    height:2em;
+}
+.projects div a{
+    margin-top:1em;
+}
+
 .right{
     position:fixed;
     right:1em;
     z-index:0;
+}
+.right button{
+    padding:0em;
 }
 
 footer{
@@ -125,15 +157,9 @@ footer button{
 footer button.selected{
     text-decoration:underline;
 }
-.license{
+.license div{
     background-color:#1E1E24;
-    border:solid 0px;
-    border-radius:10px;
-    display:block;
-    width:auto;
-    min-width:14em;
-    max-width:20em;
-    text-align:justify;
-    margin:0.2em;
+    border:solid 2px #2E2E34;
+    border-radius:15px;
     padding:0.4em;
 }
