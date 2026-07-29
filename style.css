@@ -1,30 +1,30 @@
-:root{
+:root {
     background-color:#05090D;
 }
-*{
+* {
     font-family:"Jetbrains Mono";
 }
 
-body{
+body {
     margin-top:2em;
     color:#F1F5F9;
     background:none;
 }
-h1{
+h1 {
     text-align:center;
     color:#F1F5F9;
     font-size:2em;
     line-height:2em;
     margin:0em;
 }
-h2{
+h2 {
     text-align:center;
     color:#F1F5F9;
     font-size:1.6em;
     line-height:1.6em;
     margin:0em;
 }
-.projects p{
+.projects p {
     color:#F1F5F9;
     font-size:1em;
     line-height:1.2em;
@@ -32,12 +32,12 @@ h2{
     margin:0em;
     margin-bottom:1em;
 }
-section{
+section {
     padding:0em 0.2em 0em 0.2em;
     margin-top:2.5em;
 }
 
-nav{
+nav {
     background-color:#05090D;
     position:fixed;
     top:0em;
@@ -52,7 +52,7 @@ nav{
     flex-wrap:nowrap;
     width:100%;
 }
-nav button{
+nav button {
     color:#F1F5F9;
     background:#05090D;
     border:none;
@@ -60,46 +60,32 @@ nav button{
     font-size:1em;
     z-index:1;
 }
-nav button.selected{
+nav button.selected {
     background-color:#1E1E24;
     border:solid 2px #2E2E34;
     border-radius:5px;
 }
-nav svg{
+nav svg {
     width:1em;
     height:1em;
 }
 
-section a{
+section a {
     color:#94A3B8;
     text-decoration:none;
     margin:0em;
 }
-a:hover{
+a:hover {
     text-decoration:underline;
 }
 
-.skills, .projects{
+.skills, .projects {
     text-align:center;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    margin-bottom:1em;
 }
-.skills p{
-    background-color:#1E1E24;
-    color:#94A3B8;
-    border:solid 2px #2E2E34;
-    border-radius:10px;
-    display:block;
-    width:8em;
-    text-align:center;
-    margin:0.3em;
-    padding:0.1em 0em 0.1em 0em;
-    padding-top:0.5em;
-    font-size:0.85em;
-}
-.projects div{
+.projects div {
     background-color:#1E1E24;
     border:solid 2px #2E2E34;
     border-radius:10px;
@@ -111,42 +97,38 @@ a:hover{
     margin:0.4em;
     padding:0.4em;
 }
-.projects div:hover, .skills p:hover{
+.projects div:hover, .skills p:hover {
     position:relative;
     bottom:0.2em;
 }
-.skills p bold, .projects div h1{
+bold, .projects div h1 {
     font-size:1.2em;
     line-height:1.2em;
     display:block;
     color:#F1F5F9;
 }
-.skills p svg{
-    width:5em;
-    height:5em;
-}
-.projects div a{
+.projects div a {
     margin-top:1em;
 }
-.projects div small{
+.projects div small {
     color:#94A3B8;
     font-size:1em;
     margin-top:-4em;
 }
 
-.right{
+.right {
     position:fixed;
     right:1em;
     z-index:0;
 }
-.right button{
+.right button {
     padding:0em;
 }
 
-footer{
+footer {
     text-align:center;
 }
-footer button{
+footer button {
     margin-top:1em;
     color:#A1A5A9;
     text-align:center;
@@ -155,12 +137,80 @@ footer button{
     background:none;
     border:none;
 }
-footer button.selected{
+footer button.selected {
     text-decoration:underline;
 }
-.license div{
+.license div {
     background-color:#1E1E24;
     border:solid 2px #2E2E34;
     border-radius:15px;
     padding:0.4em;
+}
+
+.skills{
+    padding-right:-2em;
+}
+.card {
+    position: relative;
+    width: 7.8em;
+    height: 9em;
+    margin:0.2em;
+    padding: 0;
+    font-size: 0.95rem;
+    text-align: center;
+    display: inline-flex;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border: solid 2px #2E2E34;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: #1E1E24;
+    color: #94A3B8;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-color: #1E1E24;
+    color: #94A3B8;
+    transform: rotateY(180deg);
+}
+
+svg.card {
+    width: 5em;
+    height: 5em;
+    margin-bottom:0.2em
+}
+
+.card-name {
+    margin-top: 0.75rem;
+    font-size: 1em;
+    font-weight: 700;
+    color: #F8FAFC;
 }
