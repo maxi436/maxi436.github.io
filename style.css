@@ -6,7 +6,7 @@
 }
 
 body {
-    margin-top:2em;
+    margin-top:3em;
     color:#F1F5F9;
     background:none;
 }
@@ -15,7 +15,7 @@ h1 {
     color:#F1F5F9;
     font-size:2em;
     line-height:2em;
-    margin:0em;
+    margin:0em 0em 0.5em 0em;
 }
 h2 {
     text-align:center;
@@ -24,12 +24,12 @@ h2 {
     line-height:1.6em;
     margin:0em;
 }
-.projects p {
+p {
     color:#F1F5F9;
     font-size:1em;
     line-height:1.2em;
     text-align:justify;
-    margin:0em;
+    margin:0.4em;
     margin-bottom:1em;
 }
 section {
@@ -84,6 +84,7 @@ a:hover {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    justify-content:center;
 }
 .projects div {
     background-color:#1E1E24;
@@ -105,8 +106,8 @@ bold, .projects div h1 {
     display:block;
     color:#F1F5F9;
 }
-.projects div a {
-    margin-top:1em;
+a.projects {
+    line-height:1.2em;
 }
 .projects div small {
     color:#94A3B8;
@@ -125,9 +126,15 @@ bold, .projects div h1 {
 
 footer {
     text-align:center;
+    position:fixed;
+    bottom:0em;
+    width:100%;
+    background:black;
+    height:1.5em;
+    padding:0.2em;
+    line-height:1em;
 }
 footer button {
-    margin-top:1em;
     color:#A1A5A9;
     text-align:center;
     font-size:1em;
