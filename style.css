@@ -6,7 +6,6 @@
 }
 
 body {
-    margin-top:3em;
     color:#F1F5F9;
     background:none;
 }
@@ -30,6 +29,7 @@ p {
     line-height:1.2em;
     text-align:justify;
     margin:0.4em;
+    margin-top:0.2em;
     margin-bottom:1em;
 }
 section {
