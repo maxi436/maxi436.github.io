@@ -219,3 +219,18 @@ bold.card {
     font-weight: 700;
     color: #F8FAFC;
 }
+
+progress{
+    width:100%;
+    border:solid 2px #94A3B8;
+    border-radius:5px;
+}
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+progress::-moz-progress-bar {
+    background-color:#94A3B8;
+}
+progress::-webkit-progress-value{
+    background-color:#94A3B8;
+}
