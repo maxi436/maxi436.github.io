@@ -205,7 +205,6 @@ footer button.selected {
     color: #94A3B8;
     transform: rotateY(180deg);
 }
-
 svg.card {
     width: 4.6em;
     height: 4.6em;
