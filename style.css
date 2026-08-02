@@ -68,7 +68,7 @@ nav svg {
     height:1em;
 }
 
-section a {
+a {
     color:#94A3B8;
     text-decoration:none;
     margin:0em;
@@ -94,10 +94,6 @@ a:hover {
     text-align:center;
     margin:0.2em;
     padding:0.4em;
-}
-.projects div:hover, .skills p:hover {
-    position:relative;
-    bottom:0.2em;
 }
 bold, .projects div h1 {
     font-size:1.2em;
