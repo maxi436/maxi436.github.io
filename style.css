@@ -9,6 +9,7 @@ body {
     color:#F1F5F9;
     background:none;
 }
+
 h1 {
     text-align:center;
     color:#F1F5F9;
@@ -55,6 +56,7 @@ nav button {
     background:#05090D;
     border:none;
     padding:0em 1em 0em 1em;
+    margin:0em 0.2em 0em 0.2em;
     font-size:1em;
     z-index:1;
 }
@@ -252,12 +254,15 @@ input[type=number] {
     appearance: textfield;
 }
 
-*:focus {
-    outline: none;
-    background-color: #1E1E24;
-    border-color: #94A3B8;
-}
-
 th.ziele,td.ziele {
     width:25%;
+}
+
+*:focus{
+    outline: none;
+    border:solid 2px#94A3B8 !important;
+    border-radius: 5px;
+}
+section *:focus{
+    margin:-2px;
 }
