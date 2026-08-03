@@ -226,3 +226,38 @@ strong {
     font-size:1.2em;
     line-height:1.2em;
 }
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 4em;
+    color: #F1F5F9;
+    background-color: #05090D;
+    border: solid 2px #2E2E34;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    font: inherit;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield !important;
+    appearance: textfield;
+}
+
+*:focus {
+    outline: none;
+    background-color: #1E1E24;
+    border-color: #94A3B8;
+}
+
+th.ziele,td.ziele {
+    width:25%;
+}
