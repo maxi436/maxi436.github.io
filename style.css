@@ -51,7 +51,6 @@ nav {
     flex-wrap:nowrap;
     width:100%;
     z-index:10;
-    border-bottom:solid 2px #1E1E24;
 }
 nav button {
     color:#F1F5F9;
