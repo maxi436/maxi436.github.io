@@ -33,16 +33,16 @@ p {
     margin-bottom:1em;
 }
 section {
-    padding:2.2em 0em 2.2em 0em;
+    padding:2.2em 0em 0.6em 0em;
 }
 
 nav {
     background-color:#05090D;
     position:fixed;
     top:0em;
+    left:0em;
     color:#F1F5F9;
-    border-radius:5px;
-    padding:0.3em 0.2em 0.2em 0.2em;
+    padding:0.3em 0.2em 0.3em 0.2em;
     font-size:1em;
     line-height:1em;
     text-align:center;
@@ -50,6 +50,8 @@ nav {
     flex-direction:row;
     flex-wrap:nowrap;
     width:100%;
+    z-index:10;
+    border-bottom:solid 2px #1E1E24;
 }
 nav button {
     color:#F1F5F9;
@@ -123,9 +125,6 @@ a.projects {
 
 footer {
     text-align:center;
-    position:fixed;
-    bottom:0em;
-    width:100%;
     background-color:#05090D;
     height:1.5em;
     padding:0.2em;
@@ -254,15 +253,12 @@ input[type=number] {
     appearance: textfield;
 }
 
-th.ziele,td.ziele {
-    width:25%;
-}
-
-*:focus{
+input:focus{
     outline: none;
     border:solid 2px#94A3B8 !important;
     border-radius: 5px;
 }
-section *:focus{
-    margin:-2px;
+
+th.ziele,td.ziele {
+    width:25%;
 }
