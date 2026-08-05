@@ -275,6 +275,6 @@ input[type=number] {
 
 input:focus, select:focus {
     outline: none;
-    border:solid 2px#94A3B8 !important;
+    border:solid 2px #94A3B8 !important;
     border-radius: 5px;
 }
