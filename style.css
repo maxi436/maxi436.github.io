@@ -101,7 +101,7 @@ select {
     text-align:center;
     font:inherit;
 }
-nav button:hover, footer button.selected, select:hover, input:hover {
+nav button:hover, footer button.selected, select:hover, input:hover option:checked{
     background-color:#2E2E34;
     border:solid 2px #2E2E34;
     border-radius:5px;
