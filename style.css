@@ -240,7 +240,7 @@ strong {
     line-height:1.2em;
 }
 
-input ,select {
+input {
     box-sizing: border-box;
     width: 100%;
     min-width: 4em;
@@ -252,7 +252,14 @@ input ,select {
     font: inherit;
     text-align: center;
 }
-
+select {
+    color: #F1F5F9;
+    background-color: #05090D;
+    border: solid 2px #2E2E34;
+    padding: 0.3em 0.5em;
+    text-align:center;
+    font:inherit;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
