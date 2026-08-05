@@ -38,6 +38,7 @@ section {
 
 footer {
     text-align:center;
+    color:#A1A5A9;
     background-color:#05090D;
     height:1.5em;
     padding:0.2em;
@@ -79,15 +80,37 @@ nav button, nav a {
 nav a {
     padding:0em 0.1em;
 }
-nav button:hover , nav a:hover, footer button:hover, footer button.selected{
-    background-color:#15191D;
-    border-radius:8px;
+input {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 4em;
+    color: #F1F5F9;
+    background-color: #05090D;
+    border: solid 2px #2E2E34;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    font: inherit;
+    text-align: center;
+}
+select {
+    color: #F1F5F9;
+    background-color: #05090D;
+    border: solid 2px #2E2E34;
+    border-radius: 5px;
+    padding: 0.3em 0.5em;
+    text-align:center;
+    font:inherit;
+}
+nav button:hover, footer button.selected, select:hover, input:hover {
+    background-color:#2E2E34;
+    border:solid 2px #2E2E34;
+    border-radius:5px;
     text-decoration:none;
 }
 nav button.selected {
     background-color:#1E1E24;
     border:solid 2px #2E2E34;
-    border-radius:8px;
+    border-radius:5px;
 }
 nav svg {
     width:1em;
@@ -238,19 +261,6 @@ strong {
     line-height:1.2em;
 }
 
-input {
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 4em;
-    color: #F1F5F9;
-    background-color: #05090D;
-    border: solid 2px #2E2E34;
-    border-radius: 5px;
-    padding: 0.2em 0.5em;
-    font: inherit;
-    text-align: center;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
@@ -263,11 +273,12 @@ input[type=number] {
     appearance: textfield;
 }
 
-input:focus{
+input:focus, select:focus {
     outline: none;
-    border:solid 2px#94A3B8 !important;
+    border:solid 2px #94A3B8 !important;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 
 select, select::picker(select) {
     appearance: base-select;
@@ -308,3 +319,5 @@ select::picker-icon {
 select:open::picker-icon {
     transform: rotate(-90deg);
 }
+=======
+>>>>>>> 14f1b3831c85ba31af89d5d1d1037f1ce70f2388
