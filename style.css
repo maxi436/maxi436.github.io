@@ -79,9 +79,10 @@ nav button, nav a {
 nav a {
     padding:0em 0.1em;
 }
-nav button:hover , nav a:hover, footer button.selected{
+nav button:hover , nav a:hover, footer button:hover, footer button.selected{
     background-color:#15191D;
     border-radius:8px;
+    text-decoration:none;
 }
 nav button.selected {
     background-color:#1E1E24;
