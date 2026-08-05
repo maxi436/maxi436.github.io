@@ -256,6 +256,7 @@ select {
     color: #F1F5F9;
     background-color: #05090D;
     border: solid 2px #2E2E34;
+    border-radius: 5px;
     padding: 0.3em 0.5em;
     text-align:center;
     font:inherit;
