@@ -278,7 +278,6 @@ input:focus, select:focus {
     border:solid 2px #94A3B8 !important;
     border-radius: 5px;
 }
-<<<<<<< HEAD
 
 select, select::picker(select) {
     appearance: base-select;
@@ -319,5 +318,3 @@ select::picker-icon {
 select:open::picker-icon {
     transform: rotate(-90deg);
 }
-=======
->>>>>>> 14f1b3831c85ba31af89d5d1d1037f1ce70f2388
